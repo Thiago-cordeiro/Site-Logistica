@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+    scroll-behavior: smooth;
+}
+
+/* Layout Base */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar {
+    width: 100%;
+    height: 10dvh;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;  
+    background-color: #ffffff; 
+    padding: 10px 20px; 
+}
+/* Define o estilo da logo */
+.logo {
+    color: #262702; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estiliza o botão do menu mobile */
+.menu-toggle {
+    display: none; /* Esconde o botão no desktop */
+    background: none; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    color: #262702; /* Cor do ícone */
+    font-size: 28px; /* Tamanho do ícone */
+    cursor: pointer; /* Altera o cursor para indicar clicável */
+}
+
+/* Define a lista de navegação */
+.nav-links {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Usa flexbox para disposição horizontal */
+    gap: 20px; /* Espaço entre os itens */
+    
+}
+
+/* Define o estilo dos links do menu */
+.nav-links a {
+    
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #0a0a0a;/* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 70vh;
+    background: url('IMG/pessoasCarregando.webp') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.562);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+/* Galeria de Imagens */
+.gallery {
+    text-align: center;
+    width: 100%;
+}
+.text-gallery{
+    padding: 40px 20px;
+    margin-top: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.img1{
+    display: flex;
+ 
+    color: #f8f5f5;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 150px;
+    background-image: url(IMG/caminhaoGalpao.jpg);
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.img2{
+    
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 150px;
+    background-image: url(IMG/caminhaoViajando.jpg);
+    border-radius: 5px;
+
+    background-size: cover;
+}
+
+.img1 h2{
+    background: rgba(0, 0, 0, 0.5);  /* Camada semi-transparente */
+    backdrop-filter: blur(1px);  
+}
+.img2 h2{
+    background: rgba(0, 0, 0, 0.5);  /* Camada semi-transparente */
+    backdrop-filter: blur(1px);  
+}
+
+.img3 h2{
+    background: rgba(0, 0, 0, 0.5);  /* Camada semi-transparente */
+    backdrop-filter: blur(1px);  
+}
+
+.img4 h2{
+    background: rgba(0, 0, 0, 0.5);  /* Camada semi-transparente */
+    backdrop-filter: blur(1px);  
+}
+.img3{
+    
+    color: #f8f5f5;
+    display: flex;
+    align-items: center;
+   
+    justify-content: space-around;
+    width: 100%;
+    height: 150px; 
+    background-image: url(IMG/pessoasCarregando.webp);
+    border-radius: 5px;
+    background-size: cover;
+    
+}
+
+.img4{
+    
+    color: #f8f5f5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    background-image: url(IMG/caminhaoViajando.jpg);
+    border-radius: 5px;
+    background-size: cover;
+}
+
+/* Agendamento */
+.booking {
+    text-align: center;
+    padding: 30px;
+    background: #f8f9fa;
+}
+
+button {
+    margin-top: 5px;
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.container-beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+}
+/* Valores */ 
+.valores{
+    margin-top: 5dvh;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f5f5;
+    
+}
+.valores h1{
+    margin-top: 5dvh;
+}
+.linha {
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin: 10px auto;
+  }  
+.card {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5%;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+    transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;         
+    color: #bebebe;  
+}
+.card:hover {
+    box-shadow: 15px 15px 30px #f7f5a7,
+               -15px -15px 30px #eff179;
+    color: #262702;
+}
+
+/* Clientes */
+.section-Cliente{
+    height: 90dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.client-text{
+    
+    text-align: center;
+    gap: 10px;
+    margin: 5dvh;
+}
+
+.cliente-cards-area{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.cardcliente {
+    width: 300px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+}
+  
+.card-image {
+    background-color: rgb(236, 236, 236);
+    background-image: url(IMG/pessoasCarregando.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+}
+  
+.card-image:hover {
+    transform: scale(0.98);
+}
+  
+.category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+}
+  
+.category:hover {
+    cursor: pointer;
+}
+  
+.heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+}
+  
+.heading:hover {
+    cursor: pointer;
+}
+  
+.author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+}
+  
+.name {
+    font-weight: 600;
+}
+  
+.name:hover {
+    cursor: pointer;
+}
+
+/*feedbacks*/
+.feedback-section {
+    width: 100%;
+
+    margin-top: 5dvh;
+    margin-bottom: 5dvh;
+    padding: 10px;
+    text-align: center;
+    background-color: #fbff00;
+}
+.feedback-grid {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 20px;
+    padding: 20px;
+}
+.feedback-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(252, 171, 65, 0.514);
+}
+.feedback-card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+.feedback-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/*fac e localização*/
+.faq-container{
+
+    width: 100%;
+    height: 50dvh;
+    margin: 5dvh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.cont-perg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.perg{
+
+    height: 80px;
+    gap: 10px;
+
+}
+/*contacts*/
+.contact-section{
+
+    width: 100%;
+    height: 50dvh;
+    background-color: #ffee00;
+    display: flex;
+}
+.mapa{
+    width: 45%;
+}
+.contatos{
+    width: 55%;
+    margin-left: 8dvh;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+
+
+/* Define o comportamento do menu em telas menores */
+@media (max-width: 800px) {
+    .menu-toggle {
+        display: block; /* Mostra o botão do menu mobile */
+    }
+    
+    .nav-links {
+        display: none; /* Oculta os links do menu por padrão */
+        flex-direction: column; /* Organiza os links verticalmente */
+        position: absolute; /* Permite sobrepor outros elementos */
+        top: 60px; /* Posiciona abaixo da navbar */
+        left: 0; /* Alinha à esquerda */
+        width: 100%; /* Ocupa a largura total */
+        background-color: #333; /* Mantém a cor de fundo */
+        padding: 10px 0; /* Espaçamento interno */
+        text-align: center; /* Centraliza os itens */
+    }
+
+    /* Exibe o menu quando a classe "active" for adicionada */
+    .nav-links.active {
+        display: flex; /* Exibe o menu */
+    }
+
+
+    /**/
+    .cliente-cards-area{
+        flex-direction: column;
+    }
+
+    .feedback-section{
+        margin-top: 75dvh;
+    }
+    .cont-perg{
+        flex-direction: column;
+        
+    }
+    .contact-section{
+        margin-top: 25dvh;
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mapa{
+        width: 100%;
+        height: 60%;
+    }
+    .contatos{
+        width: 90%;
+        padding: 10px;
+        text-align: left;
+    }
+}
+@media (max-width: 400px){
+    .feedback-section{
+        margin-top: 90dvh;
+    }
+    .contact-section{
+        margin-top: 30dvh;
+    }
+} 
