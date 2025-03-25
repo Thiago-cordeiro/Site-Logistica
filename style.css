@@ -27,35 +27,38 @@ body {
 }
 /* Define o estilo da logo */
 .logo {
-    color: #262702; /* Cor do texto */
-    font-size: 24px; /* Tamanho da fonte */
-    font-weight: bold; /* Deixa o texto em negrito */
+    color: #262702; 
+    font-size: 24px; 
+    font-weight: bold; 
 }
 
 /* Estiliza o botão do menu mobile */
 .menu-toggle {
-    display: none; /* Esconde o botão no desktop */
-    background: none; /* Remove o fundo */
-    border: none; /* Remove a borda */
-    color: #262702; /* Cor do ícone */
-    font-size: 28px; /* Tamanho do ícone */
-    cursor: pointer; /* Altera o cursor para indicar clicável */
+    display: none; 
+    background: none; 
+    border: none; 
+    color: #262702; 
+    font-size: 28px; 
+    cursor: pointer; 
 }
-
 /* Define a lista de navegação */
 .nav-links {
-    list-style: none; /* Remove os marcadores da lista */
-    display: flex; /* Usa flexbox para disposição horizontal */
-    gap: 20px; /* Espaço entre os itens */
+    list-style: none;
+    display: flex;
+    gap: 20px; 
     
+}
+
+.nav-links a:hover{
+  color: #007bff;
 }
 
 /* Define o estilo dos links do menu */
 .nav-links a {
     
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #0a0a0a;/* Cor do texto */
-    font-size: 18px; /* Tamanho da fonte */
+    text-decoration: none;
+    color: #0a0a0a;
+    font-size: 18px; 
 }
 
 /* Hero Section */
@@ -133,21 +136,21 @@ body {
 }
 
 .img1 h2{
-    background: rgba(0, 0, 0, 0.5);  /* Camada semi-transparente */
+    background: rgba(0, 0, 0, 0.5);  
     backdrop-filter: blur(1px);  
 }
 .img2 h2{
-    background: rgba(0, 0, 0, 0.5);  /* Camada semi-transparente */
+    background: rgba(0, 0, 0, 0.5);  
     backdrop-filter: blur(1px);  
 }
 
 .img3 h2{
-    background: rgba(0, 0, 0, 0.5);  /* Camada semi-transparente */
+    background: rgba(0, 0, 0, 0.5);  
     backdrop-filter: blur(1px);  
 }
 
 .img4 h2{
-    background: rgba(0, 0, 0, 0.5);  /* Camada semi-transparente */
+    background: rgba(0, 0, 0, 0.5); 
     backdrop-filter: blur(1px);  
 }
 .img3{
@@ -333,7 +336,7 @@ button {
     margin-bottom: 5dvh;
     padding: 10px;
     text-align: center;
-    background-color: #fbff00;
+    background-color: #ffd620;
 }
 .feedback-grid {
     max-width: 1200px;
@@ -387,14 +390,14 @@ button {
 
     width: 100%;
     height: 50dvh;
-    background-color: #ffee00;
+    background-color: #ffd620;
     display: flex;
 }
 .mapa{
     width: 45%;
 }
 .contatos{
-    width: 55%;
+    width: 50%;
     margin-left: 8dvh;
     display: flex;
     align-items: left;
@@ -403,24 +406,71 @@ button {
     
 }
 
+footer {
+    background-color: #f8fafc;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-info h2 {
+    color: #2176ff;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: #555;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-links a {
+    color: #2176ff;
+    text-decoration: none;
+    font-size: 14px;
+}
 
 
 /* Define o comportamento do menu em telas menores */
 @media (max-width: 800px) {
     .menu-toggle {
-        display: block; /* Mostra o botão do menu mobile */
+        display: block;
     }
     
     .nav-links {
-        display: none; /* Oculta os links do menu por padrão */
-        flex-direction: column; /* Organiza os links verticalmente */
-        position: absolute; /* Permite sobrepor outros elementos */
-        top: 60px; /* Posiciona abaixo da navbar */
-        left: 0; /* Alinha à esquerda */
-        width: 100%; /* Ocupa a largura total */
-        background-color: #333; /* Mantém a cor de fundo */
-        padding: 10px 0; /* Espaçamento interno */
-        text-align: center; /* Centraliza os itens */
+        display: none; 
+        flex-direction: column; 
+        position: absolute; 
+        top: 60px; 
+        left: 0; 
+        width: 100%; 
+        background-color: #ffd620;
+        padding: 10px 0; 
+        text-align: center; 
     }
 
     /* Exibe o menu quando a classe "active" for adicionada */
@@ -457,6 +507,12 @@ button {
         width: 90%;
         padding: 10px;
         text-align: left;
+    }
+    .footer-container{
+        width: 100%;
+    }
+    .footer-info{
+        width: 50%;
     }
 }
 @media (max-width: 400px){
