@@ -67,7 +67,7 @@ a{
 .hero {
     width: 100%;
     height: 70vh;
-    background: url('IMG/pessoasCarregando.webp') no-repeat center center/cover;
+    background: url('IMG/caminhaoCima.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +118,7 @@ a{
     justify-content: space-around;
     width: 100%;
     height: 150px;
-    background-image: url(IMG/caminhaoGalpao.jpg);
+    background-image: url(IMG/caminhaoEstrada.jpg);
     border-radius: 5px;
     background-size: cover;
 }
@@ -131,40 +131,20 @@ a{
     justify-content: space-around;
     width: 100%;
     height: 150px;
-    background-image: url(IMG/caminhaoViajando.jpg);
+    background-image: url(IMG/caminhaoDeserto.jpg);
     border-radius: 5px;
-
     background-size: cover;
 }
 
-.img1 h2{
-    background: rgba(0, 0, 0, 0.5);  
-    backdrop-filter: blur(1px);  
-}
-.img2 h2{
-    background: rgba(0, 0, 0, 0.5);  
-    backdrop-filter: blur(1px);  
-}
-
-.img3 h2{
-    background: rgba(0, 0, 0, 0.5);  
-    backdrop-filter: blur(1px);  
-}
-
-.img4 h2{
-    background: rgba(0, 0, 0, 0.5); 
-    backdrop-filter: blur(1px);  
-}
 .img3{
     
     color: #f8f5f5;
     display: flex;
     align-items: center;
-   
     justify-content: space-around;
     width: 100%;
     height: 150px; 
-    background-image: url(IMG/pessoasCarregando.webp);
+    background-image: url(IMG/empilha.jpg);
     border-radius: 5px;
     background-size: cover;
     
@@ -178,9 +158,47 @@ a{
     align-items: center;
     justify-content: space-around;
     height: 150px;
-    background-image: url(IMG/caminhaoViajando.jpg);
+    background-image: url(IMG/entrega.jpg);
     border-radius: 5px;
     background-size: cover;
+}
+.img1 h2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.402); 
+    backdrop-filter: blur(1px); 
+}
+.img2 h2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.339); 
+    backdrop-filter: blur(1px); 
+}
+
+.img3 h2{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.371); 
+    backdrop-filter: blur(1px); }
+
+.img4 h2{
+    
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.129); 
+    backdrop-filter: blur(1px);  
 }
 
 /* Agendamento */
@@ -282,14 +300,12 @@ button {
   
 .card-image {
     background-color: rgb(236, 236, 236);
-    background-image: url(IMG/pessoasCarregando.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 130px;
     border-radius: 6px 6px 0 0;
 }
-  
 .card-image:hover {
     transform: scale(0.98);
 }
